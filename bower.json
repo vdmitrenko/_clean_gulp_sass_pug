@@ -1,0 +1,17 @@
+{
+  "name": "_clean_gulp_sass_pug",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "vdmitrenko <vr.dmitrenko@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/vdmitrenko/_clean_gulp_sass_pug",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
