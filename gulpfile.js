@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     rimraf = require('rimraf'),
     pug = require('gulp-pug'),
+    plumber = require('gulp-plumber'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
@@ -66,6 +67,7 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
   gulp.src(path.src.sass)
       .pipe(sourcemaps.init())
+      .pipe(plumber())
       .pipe(sass())
       .pipe(prefixer())
       .pipe(cssmin())
